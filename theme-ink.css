@@ -1,0 +1,61 @@
+/* ================================================================
+   ТЕМА «ИНК» — белый editorial (стиль Notion/Linear)
+   Чисто-белый фон, без теней, строже радиусы, крупная типографика,
+   чёрные кнопки; оранжевый — только акцент (прогресс, ссылки, метки).
+   Подключается: index.html?theme=ink
+   ================================================================ */
+:root{
+  --ind:#f26716; --ind-d:#d9560a; --ind-t:#feeee2; --ind-s:#fdf6f0;
+  --bg:#ffffff; --card:#ffffff; --line:#eceae6;
+  --text:#141414; --muted:#8a847c;
+  --ok:#3f9142; --warn:#f0a020;
+  --sh:none;
+}
+
+/* типографика — крупнее и жёстче */
+.lead h2{font-size:33px;letter-spacing:-.045em}
+.prose h1{font-size:24px;letter-spacing:-.035em}
+
+/* строже радиусы, границы вместо теней */
+.big,.card,.rows,.plan,.links,.ans{border-radius:13px}
+.big{border:1px solid var(--line)}
+.big.cur{border:1.5px solid #141414;box-shadow:none}
+.big.cur:before{border-color:#141414}
+.big.done:before{background:#141414;border-color:#141414}
+.big.cur .bn,.big.cur .bst{color:#141414}
+.big.cur .bgo{background:#141414;color:#fff}
+.big .bbar>i{background:#141414}
+.strip .sbar>i{background:#141414}
+.path:before{background:#eceae6}
+.big:before{border-color:#eceae6}
+.big .bbar{background:#f4f2ee}
+.strip .sbar{background:#f4f2ee}
+.bar{background:#f4f2ee}
+
+/* герой-плашка — чёрная, как обложка */
+.hero{background:#141414;border-radius:15px}
+
+/* кнопки — чёрные, прямоугольнее */
+.btn{background:#141414;border-radius:13px}
+.btn:active{background:#000}
+.btn.ghost{background:#f4f1ec;color:#141414}
+.btn.flat{background:#fff;color:var(--muted);border:1px solid var(--line)}
+
+/* метка урока — контурная */
+.kicker{background:transparent;border:1px solid var(--line);color:var(--ind-d)}
+
+/* чипы и иконки — нейтральные, оранжевый у текущего */
+.sq{border-radius:11px}
+.ava{border-radius:12px}
+
+/* телеграм-мок */
+.tgchat{background:#f0efec}
+
+/* текст урока */
+.prose p{color:#33302b}
+
+/* иконка-заставка */
+.center .ic{background:#141414;border-radius:18px}
+
+/* скелетоны */
+.sk{background:#f0eeea}

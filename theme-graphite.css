@@ -1,0 +1,59 @@
+/* ================================================================
+   ТЕМА «ГРАФИТ» — тёмный премиум (финтех-настроение), осветлённый
+   Мягкий тёмно-серый тёплый фон (не чёрный), карточки заметно
+   светлее фона, оранжевый акцент «светится», герой-плашка —
+   оранжевый градиент. Подключается: index.html?theme=graphite
+   ================================================================ */
+:root{
+  --ind:#ff7a2f; --ind-d:#f26716; --ind-t:#45291a; --ind-s:#362417;
+  --bg:#23201d; --card:#302b27; --line:#403a33;
+  --text:#f4f0e9; --muted:#aaa196;
+  --ok:#6fcf73; --warn:#f0b24a;
+  --sh:0 1px 3px rgba(0,0,0,.3);
+}
+html{color-scheme:dark}
+
+/* линия пути и прогресс-бары */
+.path:before{background:#443d35}
+.big:before{border-color:#443d35;background:var(--card)}
+.big .bbar{background:#443d35}
+.strip .sbar{background:#443d35}
+.bar{background:#443d35}
+.big.cur{box-shadow:0 6px 26px rgba(255,122,47,.2)}
+
+/* герой-плашка: оранжевый градиент вместо тёмного на тёмном */
+.hero{background:linear-gradient(135deg,#f97c2b,#d9560a);color:#fff}
+.hbar{background:rgba(255,255,255,.28)}
+.dot{background:rgba(255,255,255,.14)}
+.dot.cur,.dot.done{background:rgba(255,255,255,.3)}
+
+/* телеграм-мок */
+.tgchat{background:#1b2531}
+.tgk{background:#262220}
+
+/* текст урока */
+.prose p{color:#ddd6cb}
+.note.warn{background:#382a15}
+
+/* статусы «готово» */
+.sq.ok{background:#27402a;color:#7dd981}
+.big.done .bgo{background:#27402a;color:#7dd981}
+.chev{color:#6a6258}
+
+/* скрин-мок ЛК */
+.shead{background:#38332d;border-bottom-color:var(--line)}
+.sdot{background:#554e45}
+.mv.mhid{background:#403a33;color:#998f83}
+.mbt{background:#403a33;color:var(--muted)}
+
+/* промт-блок и скелетоны */
+.prompt{background:#191613;color:#e8e2da}
+.sk{background:#353028}
+
+/* демо-ответы */
+.arow .at.warn{background:#3d2d14;color:#f0b24a}
+
+/* кнопки */
+.btn.flat{background:#2a2622;color:var(--muted)}
+.btn.danger{background:var(--card);color:#ff7d7d}
+.copy{background:var(--card)}

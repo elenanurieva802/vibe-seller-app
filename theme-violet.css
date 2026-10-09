@@ -1,0 +1,42 @@
+/* ================================================================
+   ТЕМА «ФИОЛЕТ WB» — в фирменных цветах Wildberries
+   Светлый лавандовый фон, акцент маджента #cb11ab, герой и кнопки —
+   фиолетово-малиновый градиент. Подключается: index.html?theme=violet
+   ================================================================ */
+:root{
+  --ind:#cb11ab; --ind-d:#a50d8b; --ind-t:#f9e3f4; --ind-s:#fcf1fa;
+  --bg:#f7f4fb; --card:#fff; --line:#eae4f2;
+  --text:#1d1526; --muted:#8d8599;
+  --ok:#3f9142; --warn:#f0a020;
+  --sh:0 1px 3px rgba(60,20,90,.07);
+}
+
+/* линия пути и прогресс-бары */
+.path:before{background:#e6def0}
+.big:before{border-color:#e6def0;background:var(--card)}
+.big .bbar{background:#efe9f6}
+.strip .sbar{background:#e6def0}
+.bar{background:#f1ecf7}
+.big.cur{box-shadow:0 6px 22px rgba(203,17,171,.15)}
+
+/* герой-плашка: градиент WB (фиолет → маджента) */
+.hero{background:linear-gradient(135deg,#7b2ff7,#cb11ab)}
+
+/* главные кнопки — тем же градиентом */
+.btn{background:linear-gradient(135deg,#8b2ff0,#cb11ab)}
+.btn:active{background:linear-gradient(135deg,#7a22db,#a50d8b)}
+.btn.ghost{background:var(--ind-t);color:var(--ind-d)}
+.btn.flat{background:var(--bg);color:var(--muted)}
+
+/* телеграм-мок */
+.tgchat{background:#e6dff0}
+
+/* текст урока */
+.prose p{color:#3a3145}
+
+/* иконка-заставка */
+.center .ic{background:linear-gradient(135deg,#8b2ff0,#cb11ab)}
+
+/* скелетоны и мелочи */
+.sk{background:#ebe5f3}
+.chev{color:#cfc8da}
